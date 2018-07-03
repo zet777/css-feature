@@ -35,10 +35,13 @@ body{
 	display: flex;
 	justify-content: center;
 	align-items:center;
+	transition: 1s all ease;
+	backface-visibility: hidden; /*скрываем тыльную часть карточки, это нужно что бы не видеть тыльную часть после поворота на 180 градусов*/
 }
 .front{
 	background-color: #3F51B5;
 }
 .back{
 	background-color: #BDBDBD;
+	transform: rotateY(180deg);
 }
