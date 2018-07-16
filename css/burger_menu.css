@@ -75,17 +75,27 @@ body{
 	justify-content: center;
 	align-items: center;
 }
+.menu-nav{
+	background-color: #fff;
+	height: 50px;
+	line-height: 50px;
+	padding-left: 20px;
+	padding-right: 40px;
+	margin-right: -25px;
+	border-bottom-left-radius: 50px;
+	border-top-left-radius: 50px;
+}
 .menu-nav__link{
 	display:inline-block;
 	text-decoration: none;
-	color: #fff;
+	color: #222;
 	margin-right: 20px;
 }
 
 .menu-nav{
 	transition: 0.4s;
 	transform-origin: right center; /*смещаеп трансформацию вправо */
-	transform: scaleX(0) translateX(20%);
+	transform: scaleX(0) translateX(4.5%);
 	opacity: 0;
 }
 
