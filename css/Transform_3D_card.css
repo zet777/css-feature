@@ -1,0 +1,26 @@
+body{
+	margin:0;
+	background-color: #3d385a;
+}
+.section{
+	perspective: 1000px;
+}
+.container{
+	width: 680px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 100vh;
+  transition: 1s all;
+  transform: rotateX(55deg) rotateZ(-45deg) rotateY(10deg);
+}
+img{
+	max-width: 100%;
+}
+.card{
+	width: 200px;	
+	margin: 10px;
+}
