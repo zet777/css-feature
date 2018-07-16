@@ -38,9 +38,9 @@ body{
 .menu-btn span::after{
 	content:'';
 	display: block;
-	-webkit-transition: 1s;
-	-o-transition: 1s;
-	transition: 1s;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
 }
 .menu-btn span::before{
 	transform: translateY(-5px);
@@ -48,4 +48,15 @@ body{
 
 .menu-btn span::after{
 	transform: translateY(5px);
+}
+
+.menu-btn_active span:before {
+  transform: rotate(-35deg);
+  width: 10px;
+  transform-origin: left bottom;
+}
+.menu-btn_active span:after {
+  transform: rotate(35deg);
+  width: 10px;
+  transform-origin: left top;
 }
