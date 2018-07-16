@@ -23,7 +23,7 @@ body{
 	position: relative;
 }
 .menu-btn span,
-.menu-btn span::befor, 
+.menu-btn span::before, 
 .menu-btn span::after{
 	position:absolute;
 	top:50%;
@@ -34,11 +34,15 @@ body{
 	height: 2px;
 	background-color: #000;
 }
-.menu-btn span::befor, 
+.menu-btn span::before, 
 .menu-btn span::after{
-	content: '';
+	content:'';
+	display: block;
+	-webkit-transition: 1s;
+	-o-transition: 1s;
+	transition: 1s;
 }
-.menu-btn span::befor{
+.menu-btn span::before{
 	transform: translateY(-5px);
 }
 
