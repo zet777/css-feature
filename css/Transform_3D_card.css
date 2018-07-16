@@ -16,6 +16,10 @@ body{
   height: 100vh;
   transition: 1s all;
   transform: rotateX(55deg) rotateZ(-45deg) rotateY(10deg);
+  transform-style: preserve-3d;
+}
+.container-origin{
+	transform: rotate(0);
 }
 img{
 	max-width: 100%;
@@ -23,4 +27,9 @@ img{
 .card{
 	width: 200px;	
 	margin: 10px;
+	transition: 0.3s;
+}
+.card:hover{
+	cursor: pointer;
+	transform:translateZ(15px);
 }
