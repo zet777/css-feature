@@ -22,6 +22,7 @@ body{
 	border-radius: 50%;
 	background-color:#fff;
 	position: relative;
+	z-index: 10;
 }
 
 .menu-btn span,
@@ -56,16 +57,24 @@ body{
 
 .menu-btn_active span:before {
   transform: rotate(-45deg);
-  width: 20px;
-  
+  -webkit-transform-origin: center;
+  -moz-transform-origin: center;
+  -ms-transform-origin: center;
+  -o-transform-origin: center;
+  transform-origin: center;
 }
 
 .menu-btn_active span:after {
   transform: rotate(45deg);
-  width: 20px;
-  
+  -webkit-transform-origin: center;
+  -moz-transform-origin: center;
+  -ms-transform-origin: center;
+  -o-transform-origin: center;
+  transform-origin: center;
 }
-
+.menu-btn_active span{
+	height: 0;
+}
 .menu-block{
 	display: -webkit-flex;
 	display: -moz-flex;
@@ -74,32 +83,36 @@ body{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	position:relative;
 }
-.menu-nav{
-	background-color: #fff;
-	height: 50px;
-	line-height: 50px;
-	padding-left: 20px;
-	padding-right: 40px;
-	margin-right: -25px;
-	border-bottom-left-radius: 50px;
-	border-top-left-radius: 50px;
-}
-.menu-nav__link{
-	display:inline-block;
-	text-decoration: none;
+
+.menu a {
 	color: #222;
-	margin-right: 20px;
+	width: 35px;
+	height: 35px;
+	background-color: #fff;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	transition: 1s;
+	position:absolute;
+	left: 50%;
+	margin-left: -17.5px;
+	top: 50%;
+	margin-top: -17.5px;
+	z-index: 0;	
+}
+/*Позиция иконок*/
+.menu_active a:nth-child(1) {
+  transform: translate(150%, 0%);
 }
 
-.menu-nav{
-	transition: 0.4s;
-	transform-origin: right center; /*смещаеп трансформацию вправо */
-	transform: scaleX(0) translateX(4.5%);
-	opacity: 0;
+.menu_active a:nth-child(2) {
+  transform: translate(100%, 100%);
 }
 
-.menu-nav_active{
-	transform: scaleX(1) translateX(0%);
-	opacity: 1;
+.menu_active a:nth-child(3) {
+  transform: translate(0%, 150%);
 }
