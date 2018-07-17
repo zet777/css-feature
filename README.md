@@ -9,4 +9,4 @@
 
 [Burger menu Animation](https://zet777.github.io/css-feature/Burger_menu.html)
 
-[Burger menu with icons](https://zet777.github.io/css-feature/Moving_Burger_menu.html)
+[Round menu with icons](https://zet777.github.io/css-feature/Moving_Burger_menu.html)
